@@ -1,5 +1,6 @@
-import { GrAddCircle } from "react-icons/gr";
 import { PiTrashBold } from "react-icons/pi";
+
+import { Header } from "./components";
 
 import './App.css';
 
@@ -14,15 +15,7 @@ const techs = [
 function App() {
   return (
     <main>
-      <header>
-        <h1>Minha lista de tecnologias</h1>
-        <form>
-          <label htmlFor="tech-input">Adicione uma nova tecnologia</label>
-          <input id="tech-input" type="text" placeholder="Adicione uma nova tecnologia" />
-          <button type="submit">Criar <GrAddCircle /></button>
-        </form>
-      </header>
-
+      <Header />
       <section>
         <div>
           <h2>Tecnologias criadas <span>{ 5 }</span></h2>

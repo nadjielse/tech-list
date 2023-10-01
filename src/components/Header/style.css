@@ -1,0 +1,60 @@
+.header-container {
+  position: relative;
+  background-color: var(--back-1);
+}
+
+.title {
+  color: var(--pri-1);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48.41px;
+  text-align: center;
+  padding: 2em;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#tech-label {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+#tech-input {
+  color: var(--font-1);
+  font-size: var(--l);
+  padding: var(--l);
+  border-radius: 8px;
+  background-color: var(--back-3);
+
+  ::placeholder {
+    color: var(--font-3);
+  }
+}
+
+#tech-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--font-1);
+  font-size: var(--m);
+  padding: var(--l);
+  border-radius: 8px;
+  background-color: var(--pri-2);
+  transition: 100ms;
+  
+  path {
+    stroke: var(--font-1);
+  }
+}
+
+#tech-button:hover {
+  background-color: var(--pri-1);
+}
