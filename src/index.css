@@ -16,7 +16,10 @@
   --back-3: #262626;
   --back-4: #333333;
   --danger: #E25858;
+  color: var(--font-1);
+  font-family: 'Inter', sans-serif;
   font-size: var(--m);
+  font-weight: normal;
   line-height: 140%;
   background-color: var(--back-2);
 }
@@ -24,7 +27,9 @@
 * {
   box-sizing: border-box;
   color: inherit;
+  font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
   line-height: inherit;
   padding: 0;
   border: 0;
