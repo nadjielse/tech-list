@@ -1,6 +1,5 @@
-import { PiTrashBold } from "react-icons/pi";
-
 import { Header } from "./components";
+import { Tech } from "./components";
 
 import './App.css';
 
@@ -23,13 +22,7 @@ function App() {
         </div>
         <ul>
           { techs.map(tech => (
-            <li key={ tech.id }>
-              <div>
-                <input id={ "tech-" + tech.id } type="checkbox" checked={ tech.done } />
-                <label htmlFor={ "tech-" + tech.id }>{ tech.name }</label>
-              </div>
-              <button>Remover <PiTrashBold /></button>
-            </li>
+            <Tech id={ tech.id } name={ tech.name } status={ tech.done } />
           )) }
         </ul>
       </section>

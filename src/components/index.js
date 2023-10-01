@@ -1,3 +1,4 @@
 import { Header } from "./Header";
+import { Tech } from "./Tech";
 
-export { Header };
+export { Header, Tech };

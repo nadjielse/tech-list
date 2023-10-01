@@ -1,0 +1,40 @@
+.tech-container {
+  display: flex;
+  align-items: start;
+  color: var(--font-1);
+  font-size: var(--m);
+  padding: var(--l);
+  border: 1px solid var(--back-3);
+  border-radius: 8px;
+  margin: var(--l);
+  background-color: var(--back-4);
+}
+
+.tech-body {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.tech-body input, .tech-body label {
+  cursor: pointer;
+}
+
+.tech-container.done label {
+  color: var(--font-3);
+}
+
+.trash {
+  background-color: transparent;
+  margin-left: var(--l);
+
+  path {
+    color: var(--font-3);
+  }
+}
+
+.trash:hover {
+  path {
+    color: var(--font-2);
+  }
+}
