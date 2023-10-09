@@ -15,6 +15,10 @@ export function Tech({ id, name, status, updateTechs }) {
     });
   }
 
+  const deleteTech = () => {
+    updateTechs(techs => techs.filter(tech => tech.id != id));
+  }
+
   return (
     <li className={ `tech-container ${status ? "done" : ''}` }>
       <div id={ "tech-" + id + "-body" } className="tech-body">
@@ -30,7 +34,10 @@ export function Tech({ id, name, status, updateTechs }) {
           onClick={ updateStatus }
         >{ name }</label>
       </div>
-      <button className="trash"><PiTrashBold /></button>
+      <button
+        className="trash"
+        onClick={ deleteTech }
+      ><PiTrashBold /></button>
     </li>
   );
 }
