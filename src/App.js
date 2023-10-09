@@ -1,5 +1,4 @@
-import { Header } from "./components";
-import { Tech } from "./components";
+import { Header, ListHeader, Tech } from "./components";
 
 import './App.css';
 
@@ -16,10 +15,7 @@ function App() {
     <main>
       <Header />
       <section>
-        <div>
-          <h2>Tecnologias criadas <span>{ 5 }</span></h2>
-          <h2>Concluídas <span>{ 2 } de { 5 }</span></h2>
-        </div>
+        <ListHeader techs={techs} />
         <ul>
           { techs.map(tech => (
             <Tech id={ tech.id } name={ tech.name } status={ tech.done } />

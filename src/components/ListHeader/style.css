@@ -1,0 +1,21 @@
+.listheader-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listheader-title {
+  color: var(--pri-1);
+  font-weight: 700;
+}
+
+.listheader-done {
+  color: var(--sec-2);
+}
+
+.listheader-counter {
+  display: inline-block;
+  color: var(--font-2);
+  padding-inline: .75em;
+  border-radius: 1em;
+  background-color: var(--back-4);
+}
