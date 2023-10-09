@@ -1,6 +1,6 @@
 .header-container {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   background-color: var(--back-1);
 }
 
@@ -14,12 +14,16 @@
 }
 
 .search-bar {
-  display: flex;
-  gap: 8px;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+
+.search-bar div {
+  display: flex;
+  gap: 8px;
+  margin-bottom: .5em;
 }
 
 #tech-label {
@@ -58,4 +62,9 @@
 
 #tech-button:hover {
   background-color: var(--pri-1);
+}
+
+.warning {
+  color: var(--danger);
+  margin-top: 1em;
 }

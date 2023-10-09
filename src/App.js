@@ -20,7 +20,7 @@ function App() {
 
   return (
     <main>
-      <Header />
+      <Header updateTechs={ setTechs } />
       <List techs={ techs } updateTechs={ setTechs } />
     </main>
   );
