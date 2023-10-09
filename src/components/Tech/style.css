@@ -1,9 +1,10 @@
 .tech-container {
+  position: relative;
   display: flex;
   align-items: start;
   color: var(--font-1);
   font-size: var(--m);
-  padding: var(--l);
+  padding: var(--l) 2.5em var(--l) var(--l);
   border: 1px solid var(--back-3);
   border-radius: 8px;
   margin-block: var(--l);
@@ -59,6 +60,9 @@
 }
 
 .trash {
+  position: absolute;
+  top: 1em;
+  right: 1em;
   background-color: transparent;
   margin-left: var(--l);
 
