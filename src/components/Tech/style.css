@@ -11,13 +11,47 @@
 }
 
 .tech-body {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: start;
   gap: 8px;
 }
 
 .tech-body input, .tech-body label {
   cursor: pointer;
+}
+
+.tech-body input {
+  appearance: none;
+  margin: 0;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid var(--pri-1);
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.tech-body input:checked {
+  border: 0.1em solid var(--sec-2);
+  background-color: var(--sec-2);
+}
+
+.tech-body input:checked::before {
+  transform: scale(1);
+}
+
+.tech-body input::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--font-1);
+  border-radius: 100%;
+  background-color: CanvasText;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);;
 }
 
 .tech-container.done label {
