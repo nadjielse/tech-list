@@ -1,5 +1,6 @@
 .header-container {
   position: relative;
+  margin-bottom: 48px;
   background-color: var(--back-1);
 }
 

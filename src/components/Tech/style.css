@@ -6,7 +6,7 @@
   padding: var(--l);
   border: 1px solid var(--back-3);
   border-radius: 8px;
-  margin: var(--l);
+  margin-block: var(--l);
   background-color: var(--back-4);
 }
 

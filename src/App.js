@@ -1,4 +1,4 @@
-import { Header, ListHeader, Tech } from "./components";
+import { Header, List } from "./components";
 
 import './App.css';
 
@@ -14,14 +14,7 @@ function App() {
   return (
     <main>
       <Header />
-      <section>
-        <ListHeader techs={techs} />
-        <ul>
-          { techs.map(tech => (
-            <Tech id={ tech.id } name={ tech.name } status={ tech.done } />
-          )) }
-        </ul>
-      </section>
+      <List techs={ techs } />
     </main>
   );
 }
