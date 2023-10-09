@@ -4,7 +4,7 @@ import { Warning } from "../Warning";
 
 import "./style.css";
 
-export function List({ techs }) {
+export function List({ techs, updateTechs }) {
   return (
     <section className="list-container">
       <ListHeader techs={techs} />
@@ -17,6 +17,7 @@ export function List({ techs }) {
               id={ tech.id }
               name={ tech.name }
               status={ tech.done }
+              updateTechs={ updateTechs }
             />
           )) }
         </ul> :
