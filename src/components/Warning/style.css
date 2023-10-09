@@ -1,0 +1,9 @@
+.warning-container {
+  color: var(--font-3);
+  text-align: center;
+  margin-block: var(--l);
+}
+
+.warning-title {
+  font-weight: 700;
+}
